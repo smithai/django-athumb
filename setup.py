@@ -1,7 +1,9 @@
 from distutils.core import setup
+import os.path
 import athumb
 
-long_description = open('README.rst').read()
+here = os.path.abspath(os.path.dirname(__file__))
+long_description = open(os.path.join(here, 'README.rst')).read()
 
 setup(
     name='django-athumb',
